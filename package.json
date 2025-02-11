@@ -2,12 +2,9 @@
   "name": "pricing-engine",
   "version": "1.0.0",
   "description": "",
-  "main": "dist/server.js",
+  "main": "index.js",
   "scripts": {
-    "dev": "nodemon --exec ts-node src/server.ts",
-    "build": "rimraf dist && tsc",
-    "prestart": "npm run build",
-    "start": "node dist/server.js"
+    "start": "nodemon --exec ts-node src/server.ts"
   },
   "author": "",
   "license": "ISC",
@@ -16,7 +13,6 @@
     "dotenv": "^16.4.7",
     "express": "^4.21.2",
     "mongoose": "^8.10.0",
-    "rimraf": "^6.0.1",
     "swagger-jsdoc": "^6.2.8",
     "swagger-ui-express": "^5.0.1"
   },
