@@ -4,8 +4,8 @@ export class Database {
   private static instance: Database;
 
   private constructor() {
-    mongoose.connect(process.env.MONGO_URI as string)
-    .then(() => console.log('data base connected'))
+    mongoose.connect(process.env.DB as string )
+    .then(() => console.log('database connected'))
     .catch(err => console.error('MongoDB connection error:', err));
   }
 
